@@ -1,0 +1,141 @@
+@import url('../node_modules/modern-normalize/modern-normalize.css');
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* DANTE CODE HERE -----------*/
+@font-face {
+    font-family: "Roboto";
+    src: url(./Resources/Fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Rosemarine";
+    src: url(./Resources/Fonts/rosemarine/Rosemarine\ Regular.otf);
+}
+
+html {
+    background-color: #f1f0ed;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    background: linear-gradient(345deg, #f1f0ed 40%, /*#4facb3*/ #0b98b8 10%); 
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutmecontainer {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.aboutmecontainer .portrait {
+    position: relative;
+    max-width: 500px;
+}
+
+.name {
+    position: absolute;
+    transform: translate(150px, -50px);
+    font-family: "Rosemarine";
+    font-size: 2rem;
+}
+
+.aboutmecontainer .title {
+    font-size: 2.5rem;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.aboutmecontainer .text {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+}
+
+.aboutmecontainer .thumbnails {
+    display: flex;
+    justify-self: self-end;
+    gap: 20px;
+}
+
+.aboutmecontainer .thumbnail {
+    width: 40px;
+    filter: invert(100%);
+}
+
+.mywork {
+    display: flex;
+    justify-content: center;
+}
+
+.mywork-container .title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.placarts-container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.placart .thumbnail {
+    width: 20px;
+    filter: invert(100%);
+}
+
+.placart {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    gap: 20px;
+}
+
+.p-text {
+    font-size: 0.8rem;
+}
+
+.placart-thumbnails {
+    display: flex;
+    gap: 20px;
+}
