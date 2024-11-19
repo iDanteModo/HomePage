@@ -307,16 +307,100 @@ header {
   @media (min-width: 481px) and (max-width: 767px) {
     
     /* CSS */
-    
-  }
   
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
+  }
   
   @media (min-width: 320px) and (max-width: 480px) {
     
     /* CSS */
+
+    .aboutmecontainer {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aboutmecontainer .portrait {
+        width: 300px;
+    }
+
+    .name {
+        transform: translate(12px, -60px);
+        font-size: 3rem;
+    }
+
+    .aboutmecontainer .title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .aboutmecontainer .text {
+        font-size: 1.5rem;
+    }
     
+    .aboutmecontainer .thumbnail {
+        width: 30px;
+    }
+
+    .des-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+    .mywork-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mywork-container .title {
+        font-size: 2.5rem;
+    }
+
+    .p-title {
+        font-size: 2.;
+    }
+
+    .p-text {
+        font-size: 1.5rem;
+    }
+
+    .contact-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+
+
+    .contact-title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .contact-image {
+        width: 350px;
+        align-self: center;
+    }
+
+  }
+    
+  @media (max-width: 320px) {
+    
+    .placarts-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .contact-container {
+        width: 340px;
+    }
+    .contact-body {
+        font-size: 1.3rem;
+    }
+
   }
