@@ -94,7 +94,7 @@ header {
 }
 
 .aboutmecontainer .thumbnail {
-    width: 40px;
+    width: 35px;
     filter: invert(100%);
 }
 
@@ -384,7 +384,7 @@ header {
     }
 
     .contact-image {
-        width: 350px;
+        width: 400px;
         align-self: center;
     }
 
@@ -401,6 +401,10 @@ header {
     }
     .contact-body {
         font-size: 1.3rem;
+    }
+
+    .contact-image {
+        width: 300px;
     }
 
   }
