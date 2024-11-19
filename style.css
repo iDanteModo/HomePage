@@ -59,6 +59,7 @@ header {
     align-items: center;
     max-width: 1200px;
     gap: 30px;
+    padding: 40px 0;
 }
 
 .aboutmecontainer .portrait {
@@ -105,7 +106,7 @@ header {
 }
 
 .mywork-container .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-family: "Roboto";
 }
@@ -124,6 +125,7 @@ header {
 .placart {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .p-title {
@@ -135,10 +137,53 @@ header {
 }
 
 .p-text {
-    font-size: 0.8rem;
+    font-size:1rem;
+    font-family: "Roboto";
 }
 
 .placart-thumbnails {
     display: flex;
     gap: 20px;
+}
+
+.contact {
+    background-color: #0b98b8;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    padding: 40px 0;
+}
+
+.contact-container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+}
+
+.contact-body{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.contact-details .thumbnail {
+    width: 30px;
+    filter: invert(100%);
+}
+
+.contact-image {
+    width: 500px;
+    padding: 40px 0;
 }
